@@ -1,5 +1,217 @@
-$bgcolor: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-body {
-    background-color:$bgcolor;
+.background {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+
+    &__logo { 
+
+        img {
+            max-width: 350px;
+            width: 100%;
+        }
+    }
+
+    &__toggle {
+        max-width: 60px;
+        cursor: pointer;
+        width: 100%;
+    }
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 50%),rgba(0, 0, 0, 50%));
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__content {
+        margin-top: 80px;
+        margin-left: 250px;
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 2.5em;
+            letter-spacing: .1em;
+            color: #fff;
+
+            span {
+                font-weight: 800;
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.5em;
+            color: #fff;
+            margin: 15px 0 35px;
+            max-width: 85%;
+        }
+
+        &__play {
+            position: relative;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 1.2em;
+            transition: .5s ease;
+
+            &:hover {
+                transform: scale(103%);
+                transition: .5s ease;
+            }
+
+            img {
+                margin-right: 15px;
+                max-width: 50px;
+            }
+        }
+
+        
+        &__capa {
+            position: absolute;
+            top: 30%;
+            left: 100px;
+        }
+
+        &__links {
+
+                ul {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-left: 5px;
+                    padding-top: 50px;
+        
+                    li {
+                        list-style: none;
+                        padding-right: 25px;
+        
+                        a {
+                            text-decoration: none;
+        
+                            img {
+                                filter: invert(1);
+                            }
+                        }
+                }
+            }
+        }
+    }
+}
+
+.trailer {
+    position: relative;
+    background-image: url(/src/images/video1.jpg);
+    background-size: cover;
+    height: 860px;
+
+    &__playlist {
+        position: relative;
+        padding-top: 300px;
+        padding-left: 100px;
+        z-index: 1000;
+        width: 24%;
+
+        h2 {
+            color: #fff;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+        &__video {
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            padding-bottom: 20px;
+            padding-top: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: .5s ease;
+
+            &--is-active {
+                border: 4px solid #fff;
+            }
+
+            &:hover {
+                transform: scale(105%);
+                transition: .5s ease;
+            }
+             
+            img {
+                width: 120px;
+                height: 120%;
+            }
+
+            h3 {
+                width: 100%;
+                margin-left: 15px;
+                font-size: .7em;
+            }
+        }
+    }
+
+    &__play {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        &__video {
+            width: 100%;
+            height: 860px;
+            display: none;
+
+            &--is-active {
+                display: block;
+            }
+        }
+    }
+
+    h1 {
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 3em;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 50px 100px;
+        z-index: 1000;
+        color: #fff;
+    }
 }

@@ -6,8 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gato de Botas 2: O Último Pedido</title>
     <link rel="stylesheet" href="/dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <a href="#" class="header__logo"><img src="/src/images/logo_1.png" alt="Gato de botas 2"></a>
+        <div class="header__toggle"><img src="/src/images/toggle.png" alt="toggle"></div>
+    </header>
+    <section>
+        <div class="hero">
+
+            <video autoplay loop muted plays-inline class="background">
+                <source src="/src/movie/dw-pib-hero-video-v7.mp4" type="video/mp4">
+            </video>
+            
+            <div class="hero__content">
+                <h2>Gato de Botas 2: <span>o último pedido</span></h2>
+                <p>
+                    Em Gato de Botas 2: O Último Pedido, O Gato de Botas descobre que sua paixão pela aventura cobrou seu preço: por conta de seu gosto pelo perigo e pelo desrespeito à segurança pessoal, ele queimou oito de suas nove vidas. Com apenas uma vida restante, o Gato precisa pedir ajuda para uma antiga parceira - que atualmente é sua rival e inimiga mortal, Kitty Pata Mansa - para continuar vivo. Então, o destemido bichano parte em uma jornada épica pela Floresta Negra para encontrar a mítica Estrela dos Desejos, capaz de proporcionar o legendário Último Desejo e restaurar suas nove vidas.
+                </p>
+                <a href="#trailer" class="hero__content__play"><img src="/src/images/play.png" alt="play filme">Assista o trailer</a>
+                <div class="hero__content__capa"><img src="/src/images/capa_trailer.jpg" alt="Trailer"></div>
+                <div class="hero__content__links">
+                    <ul>
+                        <li><a href="https://www.instagram.com/pussinboots/"><img src="/src/images/instagram.png" alt="instagram"></a></li>
+                        <li><a href="https://www.facebook.com/Pussinboots/"><img src="/src/images/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/Dreamworks"><img src="/src/images/twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.tiktok.com/@pussinboots"><img src="/src/images/twitter.png" alt="twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="trailer" id="trailer">
+            <h1>Trailer oficial</h1>
+            <div class="trailer__playlist">
+                <h2>playlist</h2>
+                <ul>
+                    <li class="trailer__playlist__video">
+                        <img data-tab-trailer="trailer_fist" src="/src/images/video1.jpg" alt="Trailer Gato de botas">
+                        <h3>Gato de botas:<br>O último pedido oficial Trailer 1</h3>
+                    </li>
+                    <li class="trailer__playlist__video">
+                        <img data-tab-trailer="trailer_second" src="/src/images/video2.jpg" alt="Trailer Gato de botas">
+                        <h3>Gato de botas:<br>O último pedido oficial Trailer 2</h3>
+                    </li>
+                    <li class="trailer__playlist__video">
+                        <img data-tab-trailer="trailer_third" src="/src/images/video3.jpg" alt="Trailer Gato de botas">
+                        <h3>Gato de botas:<br>O último pedido oficial Trailer 3</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="trailer__play">
+                <iframe data-tab-id="trailer_fist" class="trailer__play__video" src="https://www.youtube.com/embed/qtHcEfpYIow?controls=0&showinfo=0&rel=0" title="Gato de Botas 2: O Último Pedido | Trailer Oficial (Universal Pictures) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe data-tab-id="trailer_second" class="trailer__play__video" src="https://www.youtube.com/embed/QAcn7cWm_hc?controls=0&showinfo=0&rel=0" title="Gato de Botas 2: O Último Pedido | Trailer 2 Oficial (Universal Pictures) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe data-tab-id="trailer_third" class="trailer__play__video" src="https://www.youtube.com/embed/sLk94T-hS78?controls=0&showinfo=0&rel=0" title="Gato de Botas 2: O Último Pedido | Trailer 3 Oficial (Universal Pictures) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="/main.js"></script>
 </body>
 </html>
